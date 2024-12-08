@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/jomaxdrill/projects/python/ENPM662/Project2/ROS/only_vehicle/install/vehicle_basket/include/**",
+        "/home/jomaxdrill/projects/python/ENPM662/Project2/ROS/only_vehicle/install/robot_arm_fruit/include/**",
+        "/home/jomaxdrill/projects/python/ENPM662/Project2/ROS/only_vehicle/install/fruit_vehicle_arm/include/**",
+        "/opt/ros/galactic/include/**",
+        "/home/jomaxdrill/projects/python/ENPM662/Project2/ROS/only_vehicle/src/fruit_vehicle_arm/include/**",
+        "/home/jomaxdrill/projects/python/ENPM662/Project2/ROS/only_vehicle/src/robot_arm_fruit/include/**",
+        "/home/jomaxdrill/projects/python/ENPM662/Project2/ROS/only_vehicle/src/vehicle_basket/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
