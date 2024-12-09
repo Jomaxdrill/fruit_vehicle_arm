@@ -1,4 +1,4 @@
-# AgriBot
+# Agricultural Robot
 ENPM662 - Introduction to Robot Modeling Project 2: Agricultural Robot model and simulation for picking apples 
 
 The following project made use of the CAD software Solidworks and software framework ROS and additional tools like Gazebo/RVizto simulate the task of a vehicle attached with a robot arm specialized in picking apples from trees.
@@ -11,15 +11,15 @@ Ubuntu 20.04
 ## Required installations
 - Python >= 3.8
 - sympy
-- ROS2
-- Gazebo
+- ROS2 galatic
+- Gazebo (consider migration for 2025 to Gazebo Garden)
 - RVIZ2
 
 ## Key Contributions of Each Member
 
 Jonathan -CAD models of the environment as the trees& apples plus set stable URDF assembling with vehicle done in (https://github.com/Jomaxdrill/ROS_vehicle) . Keep track of progress and testing/debug of every step of the project. Helped fix integrity issues of the model. Created & organized github repository. 
 
-Kent-  CAD model of the Robot Arm, DH table, forward kinematics validation and report of the project.
+Kent- CAD model of the Robot Arm, DH table, forward kinematics validation and report of the project.
 
 Robens- Built upon initial ros package by adding Lidar Sensor,IMU and vacuum gripper plugins & controllers. Debugging of interactions between objects. coding of teleop script and autonomous mode.
 
@@ -38,8 +38,10 @@ sudo apt install python3-colcon-common-extensions
 -Install all necessary dependencies and libraries with pip for insrtance. Recommended to run in your own python environment.
 
 ## Steps to build and run project.
+
 ### Install python packages 
--In case of missing libraries you can use pip to install them:
+
+In case of missing libraries you can use pip to install them:
 ```sh
 pip install NAME_OF_LIBRARY
 pip install 
@@ -258,6 +260,8 @@ ros2 run rqt_plot rqt_plot
 ## Videolinks
 ### Apple picking 
 https://drive.google.com/file/d/1bWp0tc4YbuVi7mIBvuK-GSt5amngVuD6/view?usp=sharing
+### Teleoperation 
+https://drive.google.com/file/d/17SFGPVSB7CHLmiUaYZs7CN_LTJuTty-l/view?usp=sharing
 ### Use with RVIZ
 https://drive.google.com/file/d/1abLG8P37SsgXIo9mUsSpZqwMaZRfMZdK/view?usp=sharing
 
