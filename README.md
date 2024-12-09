@@ -71,6 +71,9 @@ colcon build
 ```
 
 In case you got an error while building regarding an include folder not found run this command while being in the workspace folder
+
+![image](https://github.com/user-attachments/assets/0f4deb20-c25f-4379-8862-62dd9c4c906a)
+
 ```sh
 mkdir -p ~/src/fruit_vehicle_arm/include/fruit_vehicle_arm
 ```
