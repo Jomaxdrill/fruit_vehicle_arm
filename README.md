@@ -192,6 +192,10 @@ python3 forward_position_kinematics_validation.py
 ```
 This script will ask for the user to provide joint angles to give a final end effector matrix. This applies only for the robot arm.
 
+Aditionally there is a matlab script (test_robot.m) using peter corke robotics toolbox for visualize the robot and interact with it.
+
+![Screenshot 2024-12-05 140523](https://github.com/user-attachments/assets/1e3bff87-50c1-4728-b05e-63e8205146e8)
+
 ```sh
 python3 Inverse_kinematics_and_validation.py
 ```
@@ -209,10 +213,7 @@ ros2 run fruit_vehicle_arm truck_and_arm_autonomous_control.py
 
 The agricultural robot will spawn from position [0.0, 0.25, 0.05] and move from its origin near the trees to catch the apples attached to them with its robot arm.
 
-![image](https://github.com/user-attachments/assets/ecd65f1b-7c26-4be5-bf60-42fad1c6312f)
-
 ![image](https://github.com/user-attachments/assets/031c92bd-e54f-4a63-bfcd-4dc81da03476)
-
 
 ### Teleoperation:
 
