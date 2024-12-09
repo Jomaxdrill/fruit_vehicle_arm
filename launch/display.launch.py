@@ -22,7 +22,7 @@ def generate_launch_description():
     use_urdf = False
     # Position and orientation
     # [X, Y, Z]
-    position = [0.0, 0.0, 0.1]
+    position = [0.0, 0.25, 0.05]
     # [Roll, Pitch, Yaw]
     orientation = [0.0, 0.0, 0.0]
     # Base Name or robot

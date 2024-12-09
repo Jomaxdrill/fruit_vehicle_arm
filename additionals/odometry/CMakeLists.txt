@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(fruit_vehicle_arm)
+project(odometry)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -7,13 +7,44 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
-find_package(robot_state_publisher REQUIRED)
-find_package(xacro REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(gazebo REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package(nav_msgs REQUIRED)
+
+install(
+    DIRECTORY include/
+    DESTINATION include
+    )
+
+install(DIRECTORY
+    src
+    DESTINATION share/${PROJECT_NAME}/
+)
+
+add_library(odometry_plugin SHARED
+  src/odometry_plugin.cpp
+)
+
+target_include_directories(odometry_plugin PUBLIC include)
+
+ament_target_dependencies(odometry_plugin
+  "gazebo_ros"
+  "nav_msgs"
+  "tf2_ros"
+)
+
+
+ament_export_libraries(odometry_plugin)
+
+install(TARGETS
+  odometry_plugin
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin)
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -27,27 +58,3 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
-
-install(DIRECTORY
-urdf
-meshes
-launch
-config
-worlds
-rviz
-src
-DESTINATION share/${PROJECT_NAME}/
-)
-
-install(
-    DIRECTORY include/fruit_vehicle_arm
-    DESTINATION include
-    )
-
-install(
-  PROGRAMS
-  launch/robot_description_publisher.py
-  src/teleop.py
-  src/truck_and_arm_autonomous_control.py
-  DESTINATION lib/${PROJECT_NAME}
-  )

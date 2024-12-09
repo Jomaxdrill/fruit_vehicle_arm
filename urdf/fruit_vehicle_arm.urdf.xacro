@@ -773,7 +773,7 @@
           rgba="0 0 0 1" />
       </material>
     </visual>
-    <collision>
+    <!-- <collision>
       <origin
         xyz="-0.332 -0.3825 -0.054"
         rpy="0 1.5707 1.5707" />
@@ -781,7 +781,7 @@
         <mesh
           filename="package://fruit_vehicle_arm/meshes/arm_link4.STL" />
       </geometry>
-    </collision>
+    </collision> -->
   </link>
   <joint
     name="arm_link4_joint"
@@ -1007,8 +1007,8 @@
 
   <joint name="arm_link2_joint">
       <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
+          <param name="min">-1.57</param>
+          <param name="max">1.57</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -1016,8 +1016,8 @@
 
   <joint name="arm_link3_joint">
       <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
+          <param name="min">-1.0</param>
+          <param name="max">4.5</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -1025,8 +1025,8 @@
 
   <joint name="arm_link4_joint">
       <command_interface name="position">
-          <param name="min">-3.14</param>
-          <param name="max">3.14</param>
+          <param name="min">-2.5</param>
+          <param name="max">2.5</param>
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
@@ -1044,7 +1044,7 @@
       <pose>0.0 0.0 0.0 0 0 0</pose>
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>10</update_rate>
+      <update_rate>5</update_rate>
       <ray>
         <scan>
           <horizontal>

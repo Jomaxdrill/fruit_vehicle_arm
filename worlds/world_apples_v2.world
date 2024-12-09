@@ -156,7 +156,7 @@
       <link name='base_link'>
         <inertial>
           <pose>0 -0 0 0 -0 0</pose>
-          <mass>0.10428</mass>
+          <mass>0.01</mass>
           <inertia>
             <ixx>3.7428e-05</ixx>
             <ixy>-2.7676e-37</ixy>
@@ -177,25 +177,7 @@
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
+              <ode/>
             </contact>
             <bounce/>
             <friction>
@@ -231,7 +213,7 @@
       <link name='base_link'>
         <inertial>
           <pose>0 -0 0 0 -0 0</pose>
-          <mass>0.10428</mass>
+          <mass>0.01</mass>
           <inertia>
             <ixx>3.7428e-05</ixx>
             <ixy>-2.7676e-37</ixy>
@@ -252,25 +234,7 @@
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
+                <ode/>
             </contact>
             <bounce/>
             <friction>

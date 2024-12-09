@@ -1,0 +1,182 @@
+<sdf version='1.7'>
+  <model name='tree_body'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 -5e-06 0.481863 0 -0 0</pose>
+        <mass>1.26388</mass>
+        <inertia>
+          <ixx>0.0787565</ixx>
+          <ixy>-8.58803e-08</ixy>
+          <ixz>-3.58298e-08</ixz>
+          <iyy>0.0787579</iyy>
+          <iyz>4.74617e-07</iyz>
+          <izz>0.0660579</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__branch1_collision_1'>
+        <pose>0 -0.610343 0.4875 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__branch2_collision_2'>
+        <pose>0.610343 0 0.4875 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__branch3_collision_3'>
+        <pose>0 0.610343 0.4875 1.5708 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__branch4_collision_4'>
+        <pose>-0.610343 0 0.4875 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch4.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__leaves_collision_5'>
+        <pose>0 0 0.6 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/leaves.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Brown tree trunk material -->
+          <ambient>0.3 0.1 0.0 1</ambient>  <!-- Dark brown for shadowed areas -->
+          <diffuse>0.6 0.3 0.1 1</diffuse>  <!-- Rich brown for visible reflection -->
+          <specular>0.1 0.1 0.1 0</specular>  <!-- Very low specular, matte finish -->
+          <emissive>0.05 0.02 0.01 1</emissive>  <!-- Very subtle glow, no strong emission -->
+        </material> <!-- End tree trunk material -->
+      </visual>
+      <visual name='base_link_fixed_joint_lump__branch1_visual_1'>
+        <pose>0 -0.610343 0.4875 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch1.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Brown tree trunk material -->
+          <ambient>0.3 0.1 0.0 1</ambient>  <!-- Dark brown for shadowed areas -->
+          <diffuse>0.6 0.3 0.1 1</diffuse>  <!-- Rich brown for visible reflection -->
+          <specular>0.1 0.1 0.1 0</specular>  <!-- Very low specular, matte finish -->
+          <emissive>0.05 0.02 0.01 1</emissive>  <!-- Very subtle glow, no strong emission -->
+        </material> <!-- End tree trunk material -->
+      </visual>
+      <visual name='base_link_fixed_joint_lump__branch2_visual_2'>
+        <pose>0.610343 0 0.4875 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch2.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Brown tree trunk material -->
+          <ambient>0.3 0.1 0.0 1</ambient>  <!-- Dark brown for shadowed areas -->
+          <diffuse>0.6 0.3 0.1 1</diffuse>  <!-- Rich brown for visible reflection -->
+          <specular>0.1 0.1 0.1 0</specular>  <!-- Very low specular, matte finish -->
+          <emissive>0.05 0.02 0.01 1</emissive>  <!-- Very subtle glow, no strong emission -->
+        </material> <!-- End tree trunk material -->
+      </visual>
+      <visual name='base_link_fixed_joint_lump__branch3_visual_3'>
+        <pose>0 0.610343 0.4875 1.5708 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch3.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Brown tree trunk material -->
+          <ambient>0.3 0.1 0.0 1</ambient>  <!-- Dark brown for shadowed areas -->
+          <diffuse>0.6 0.3 0.1 1</diffuse>  <!-- Rich brown for visible reflection -->
+          <specular>0.1 0.1 0.1 0</specular>  <!-- Very low specular, matte finish -->
+          <emissive>0.05 0.02 0.01 1</emissive>  <!-- Very subtle glow, no strong emission -->
+        </material> <!-- End tree trunk material -->
+      </visual>
+      <visual name='base_link_fixed_joint_lump__branch4_visual_4'>
+        <pose>-0.610343 0 0.4875 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/branch4.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Brown tree trunk material -->
+          <ambient>0.3 0.1 0.0 1</ambient>  <!-- Dark brown for shadowed areas -->
+          <diffuse>0.6 0.3 0.1 1</diffuse>  <!-- Rich brown for visible reflection -->
+          <specular>0.1 0.1 0.1 0</specular>  <!-- Very low specular, matte finish -->
+          <emissive>0.05 0.02 0.01 1</emissive>  <!-- Very subtle glow, no strong emission -->
+        </material> <!-- End tree trunk material -->
+      </visual>
+      <visual name='base_link_fixed_joint_lump__leaves_visual_5'>
+        <pose>0 0 0.6 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tree_body/meshes/leaves.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Green leaf material -->
+          <ambient>0.1 0.4 0.1 1</ambient>  <!-- Dim green, not too bright -->
+          <diffuse>0.3 0.7 0.3 1</diffuse>  <!-- Rich green, but not saturated -->
+          <specular>0.2 0.2 0.2 0</specular>  <!-- Slight specular for a matte finish -->
+          <emissive>0.05 0.2 0.05 1</emissive>  <!-- Very subtle glow, like light passing through leaves -->
+        </material> <!-- End leaf material -->
+      </visual>
+    </link>
+    <frame name='branch1_joint' attached_to='base_link'>
+      <pose>0 -0.610343 0.4875 1.5708 -0 0</pose>
+    </frame>
+    <frame name='branch1' attached_to='branch1_joint'/>
+    <frame name='branch2_joint' attached_to='base_link'>
+      <pose>0.610343 0 0.4875 1.5708 -0 1.5708</pose>
+    </frame>
+    <frame name='branch2' attached_to='branch2_joint'/>
+    <frame name='branch3_joint' attached_to='base_link'>
+      <pose>0 0.610343 0.4875 1.5708 -0 -3.14159</pose>
+    </frame>
+    <frame name='branch3' attached_to='branch3_joint'/>
+    <frame name='branch4_joint' attached_to='base_link'>
+      <pose>-0.610343 0 0.4875 1.5708 0 -1.5708</pose>
+    </frame>
+    <frame name='branch4' attached_to='branch4_joint'/>
+    <frame name='leaves_joint' attached_to='base_link'>
+      <pose>0 0 0.6 0 -0 0</pose>
+    </frame>
+    <frame name='leaves' attached_to='leaves_joint'/>
+  </model>
+</sdf>

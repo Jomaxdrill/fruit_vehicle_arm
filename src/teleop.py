@@ -47,8 +47,17 @@ class KeyboardControlNode(Node):
 
         q : force stop
 
+        Control its arm!
+
+        Keys arm: 1,5 link1
+        Keys arm: 2,6 link2
+        Keys arm: 3,7 link3
+        Keys arm: 4,8 link4
+
         Esc to quit
+
         """
+
 
         self.get_logger().info(self.msg)
         joint_positions = Float64MultiArray()

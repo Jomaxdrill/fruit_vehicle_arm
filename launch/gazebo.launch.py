@@ -14,20 +14,6 @@ def generate_launch_description():
     # Get Gazebo ROS interface package
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 
-    # # Get the location for empty world
-    # world = os.path.join(
-    #     get_package_share_directory('fruit_vehicle_arm'),
-    #     'worlds',
-    #     'empty_world.world'
-    # )
-
-    # # map for apples
-    # world = os.path.join(
-    #     get_package_share_directory('fruit_vehicle_arm'),
-    #     'worlds',
-    #     'prot_world_apples.world'
-    # )
-
     # map for apples
     world = os.path.join(
         get_package_share_directory('fruit_vehicle_arm'),
