@@ -60,6 +60,11 @@ Clone the repository package inside this folder
 ```sh
    git clone https://github.com/Jomaxdrill/fruit_mobile_robot.git
 ```
+
+You should get a folder called **fruit_vehicle_arm** with the content of the repository inside. It should be like the following example:
+
+![image](https://github.com/user-attachments/assets/5bff6047-e9c1-4706-8eaa-b3508b1cbf40)
+
 Downlod all the dependencies before runnning a build.
 ```sh
 rosdep install -i --from-path src --rosdistro galactic -y
